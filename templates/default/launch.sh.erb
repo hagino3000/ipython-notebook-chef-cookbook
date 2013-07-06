@@ -1,0 +1,48 @@
+#!/bin/bash
+
+pid=`dirname $0`/ipynb.pid
+port=<%= node['ipython-notebook']['port'] %>
+ip=<%= node['ipython-notebook']['ip'] %>
+ipythondir=`dirname $0`/.ipython
+
+start() {
+    if [ -f $pid ]; then
+        echo "running already. pid: `cat $pid`";
+        return 1;
+    else
+        cd `dirname $0`
+        ipython notebook --pylab=inline --port=$port --ip=$ip --ipython-dir=$ipythondir &
+        echo $! > $pid
+    fi
+}
+
+stop() {
+    if [ -f $pid ]; then
+        kill `cat $pid`
+        rm -f $pid
+    else
+        echo "Not running";
+    fi
+}
+
+restart() {
+    stop
+    start
+}
+
+case "$1" in
+  start)
+    start
+    ;;
+  stop)
+    stop
+    ;;
+  restart)
+    restart
+    ;;
+  *)
+    echo $"Usage: $0 {start|stop|restart}"
+    exit 1
+esac
+
+exit $?
