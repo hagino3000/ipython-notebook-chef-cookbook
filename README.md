@@ -7,8 +7,9 @@ Requirements
 ------------
 
 #### packages
-- `python`
-- `pip`
+
+- python
+- pip
 
 Attributes
 ----------
@@ -70,9 +71,7 @@ Some options needed.
 
 Contributing
 ------------
-TODO: (optional) If this is a public cookbook, detail the process for contributing. If this is a private cookbook, remove this section.
 
-e.g.
 1. Fork the repository on Github
 2. Create a named feature branch (like `add_component_x`)
 3. Write you change
@@ -83,7 +82,7 @@ e.g.
 Todo
 ----
 
-Make note directory and clone notebook repo.
+Make notes directory and clone notebook repo.
 
 License and Authors
 -------------------
