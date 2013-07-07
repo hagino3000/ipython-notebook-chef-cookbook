@@ -82,7 +82,8 @@ Contributing
 Todo
 ----
 
-Make notes directory and clone notebook repo.
+- Make notes directory and clone notebook repo.
+- Use supervisor to daemonize
 
 License and Authors
 -------------------
