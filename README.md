@@ -1,6 +1,6 @@
 ipython-notebook Cookbook
 =========================
-This cookbook sets up iPython notebook server.
+This cookbook sets up the IPython notebook server.
 
 
 Requirements
