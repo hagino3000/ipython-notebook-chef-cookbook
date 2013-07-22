@@ -1,3 +1,12 @@
+#
+# Cookbook Name:: ipython-notebook
+# Recipe:: launch
+#
+# Copyright 2013, hagino3000
+#
+# Licensed under the MIT License.
+#
+
 # Create launch user
 group 'ipynb' do
   group_name 'ipynb'
