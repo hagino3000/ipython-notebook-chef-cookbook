@@ -4,7 +4,7 @@
 #
 # Copyright 2013, hagino3000
 #
-# All rights reserved - Do Not Redistribute
+# Licensed under the MIT License.
 #
 
 # Install packages
